@@ -13,7 +13,7 @@ import rasterio
 
 class SpaceNetDataset(Dataset):
 
-    def __init__(self, geojson_dir, image_dir, transform=None):
+    def __init__(self, image_dir, geojson_dir, transform=None):
         self.geojson_dir = geojson_dir
         self.image_dir = image_dir
         self.transform = transform
